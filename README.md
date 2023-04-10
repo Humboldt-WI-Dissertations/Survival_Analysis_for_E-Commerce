@@ -10,10 +10,11 @@ pip install -r requirements.txt
 ```
 
 #### Usage
-- The complete code is stored in `survival_modelling.ipynb`
-- The models trained in the Price Modelling section are evaluated by calling `model_evaluation.py` from `utilities`
-- The explanations created by SurvSHAP are visualized by calling `survshap_util.py` from `utilities`
+- The complete code is stored in `survival_modelling.ipynb`.
+- The models trained in the Price Modelling section are evaluated by calling `model_evaluation.py` from `utilities`.
+- The explanations created by SurvSHAP are visualized by calling `survshap_util.py` from `utilities`.
+- The figures generated are saved under `plots`.
 
-
---------------------------------------------------------------------
+#### Data
 This study was done in collaboration with a private sector entity and the data used can not be shared.
+
