@@ -9,12 +9,36 @@ In the past decade, we have seen the rise of numerous online marketplaces for us
 pip install -r requirements.txt
 ```
 
-#### Usage
-- The complete code is stored in `survival_modelling.ipynb`.
-- The models trained in the Price Modelling section are evaluated by calling `model_evaluation.py` from `utilities`.
-- The explanations created by SurvSHAP are visualized by calling `survshap_util.py` from `utilities`.
-- The figures generated are saved under `plots`.
-
 #### Data
 This study was done in collaboration with a private sector entity and the data used can not be shared.
+
+#### Usage
+- The complete project code is stored in `survival_modelling.ipynb`.
+- Evaluate Pricing Models:
+```python
+from utilities import model_evaluation
+from catboost import CatBoostRegressor
+
+price_model = CatBoostRegressor(random_state=42).fit(X_train, y_train)
+model_evaluation.reg_eval(price_model, X_test, y_test)
+```
+- Create time dependent explanations
+```python
+from utilities import survshap_util
+from sksurv.ensemble import RandomSurvivalForest
+from survshap import SurvivalModelExplainer, PredictSurvSHAP, ModelSurvSHAP
+import matplotlib.pyplot as plt
+
+#Fit survival model
+surv_model = RandomSurvivalForest(random_state=42).fit(X,y)
+
+#Create explanations
+model_exp = SurvivalModelExplainer(surv_model, X, y)
+global_rsf_exp = ModelSurvSHAP(random_state=42).fit(model_exp)
+
+#Plot individual SHAP lines for feature 'DOP' and save
+survshap_util.shap_lines_plot(global_rsf_exp.full_result, 'DOP')
+plt.savefig('plots/dop_shap(t).png', transparent=True)
+```
+
 
