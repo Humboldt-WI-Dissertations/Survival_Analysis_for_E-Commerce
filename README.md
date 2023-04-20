@@ -1,4 +1,25 @@
 # Survival Analysis for Management Support in E-Commerce
+
+**Type:** Master's Thesis
+
+**Author:** Danyal Ahmed
+
+**1st Examiner:** Prof. Dr. Stefan Lessmann
+
+**2nd Examiner:** Prof. Dr. Benjamin Fabian
+
+## Project Flowchart
+```mermaid
+graph TD;
+  A[Preprocess training data from online marketplace] --> B[Benchmark different Hedonic Pricing Models];
+  B --> C["Apply selected model to target data and estimate Degree-of-Overpricing (DOP)"];
+  C --> D[Benchmark different Survival Models on target data]
+  D --> E[Predict Survival Function and create time-dependent explanations]
+  E --> F[Visualize Survival Probabilities and Risk Scores for different quartiles of DOP]
+  
+```
+
+
 Code Repository for M.Sc. Thesis in Economics and Management Science at Humboldt-Universität zu Berlin.
 
 #### Abstract
