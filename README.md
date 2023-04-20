@@ -23,7 +23,7 @@ graph TD;
 - [Abstract](#abstract)
 - [Setup](#setup)
 - [Usage](#usage)
-- [Project structure](-Project-structure)
+- [Repository structure](-Repository-structure)
 
 Code Repository for M.Sc. Thesis in Economics and Management Science at Humboldt-Universität zu Berlin.
 
