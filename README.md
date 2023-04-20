@@ -74,11 +74,9 @@ plt.savefig('plots/dop_shap(t).png', transparent=True)
 ├── README.md
 ├── requirements.txt                                -- required libraries
 ├── plots                                           -- stores image files
-└── src
-    ├── prepare_source_data.ipynb                   -- preprocesses data
-    ├── data_preparation.ipynb                      -- preparing datasets
-    ├── model_tuning.ipynb                          -- tuning functions
-    └── run_experiment.ipynb                        -- run experiments 
-    └── plots                                       -- plotting functions                 
+├── survival_modelling.ipynb                        -- full code application
+└── utilities                                       -- helper functions
+    ├── model_evaluation.py                         -- hedonic pricing model evaluation
+    └── survshap_util.py                            -- create SurvShap plots               
 ```
 
