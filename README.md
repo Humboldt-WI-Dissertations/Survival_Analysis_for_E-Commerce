@@ -76,7 +76,7 @@ plt.savefig('plots/dop_shap(t).png', transparent=True)
 ├── plots                                           -- stores image files
 ├── survival_modelling.ipynb                        -- full code application
 └── utilities                                       -- helper functions
-    ├── model_evaluation.py                         -- hedonic pricing model evaluation
-    └── survshap_util.py                            -- create SurvShap plots               
+    ├── model_evaluation.py                           -- hedonic pricing model evaluation
+    └── survshap_util.py                              -- create SurvShap plots               
 ```
 
