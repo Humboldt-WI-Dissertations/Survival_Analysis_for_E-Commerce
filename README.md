@@ -23,11 +23,11 @@ Code Repository for M.Sc. Thesis in Economics and Management Science at Humboldt
 ## Summary
 In the past decade, we have seen the rise of numerous online marketplaces for used cars. This study explores the efficacy of combining survival analysis with model explanation frameworks to enhance the management system of online platforms. We extend the work done by Jerenz (2008) to estimate the demand function of used cars in an online marketplace for a specific dealership using survival analysis. The project can be summarised in the following steps:
 
-- Develop a hedonic pricing model that draws upon data from 148,000 competing listings in the online marketplace. 
+- Develop a hedonic pricing model utilizing all competing listings in the online marketplace. 
 - Use the most accurate hedonic pricing model to estimate the degree-of-overpricing (DOP) of every listing.
 - Apply and benchmark modern survival algorithms on target dealership data with their estimated DOPs.
 - Create time-dependent explanations through the SurvSHAP framework developed by Krzyziński et al. (2022).
-- Develop DOP Qunatile based Survival Curves and Risk Scores.
+- Develop DOP Quartile based Survival Curves and Risk Scores.
 
 ## Setup
 
@@ -75,6 +75,10 @@ plt.savefig('plots/dop_shap(t).png', transparent=True)
 - Global SurvSHAP Feature Impact
 
 ![alt text](https://github.com/danyalahmed247/HU-Thesis/blob/f6b6e173359e05ef6967b7504e3b69371a943c94/plots/mean_shap(t).png?raw=true)
+
+- DOP Quartile based Survival Curves
+
+![alt text](https://github.com/danyalahmed247/HU-Thesis/blob/25bf5d5b8f75b7aa805e23433d5061c17ec8d193/plots/survival_function.png?raw=true)
 
 
 ## Repository structure
