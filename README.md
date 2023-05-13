@@ -74,7 +74,7 @@ plt.savefig('plots/dop_shap(t).png', transparent=True)
 
 - Global SurvSHAP Feature Impact
 
-[alt text](https://github.com/danyalahmed247/HU-Thesis/blob/f6b6e173359e05ef6967b7504e3b69371a943c94/plots/mean_shap(t).png?raw=true)
+![alt text](https://github.com/danyalahmed247/HU-Thesis/blob/f6b6e173359e05ef6967b7504e3b69371a943c94/plots/mean_shap(t).png?raw=true)
 
 
 ## Repository structure
