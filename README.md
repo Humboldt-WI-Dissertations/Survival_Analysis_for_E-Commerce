@@ -29,6 +29,8 @@ In the past decade, we have seen the rise of numerous online marketplaces for us
 - Create time-dependent explanations through the SurvSHAP framework developed by Krzyziński et al. (2022).
 - Develop DOP Quartile based Survival Curves and Risk Scores.
 
+Our experiments conclude that the Catboost Regressor in combination with the Random Survival Forest prove to be the best fit for our data. Analysis of the SurvSHAP explanations and the survival function allow us to predict survival probabilities over time for different DOP Quartiles.
+
 ## Setup
 
 - Install Requirements
