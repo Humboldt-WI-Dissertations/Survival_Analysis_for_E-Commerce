@@ -49,7 +49,7 @@ price_model = CatBoostRegressor(random_state=42).fit(X_train, y_train)
 ```python
 surv_model = RandomSurvivalForest(random_state=42).fit(X,y)
 ```
--Fit SurvSHAP
+- Fit SurvSHAP
 ```python
 model_exp = SurvivalModelExplainer(surv_model, X, y)
 global_rsf_exp = ModelSurvSHAP(random_state=42).fit(model_exp)
